@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: starter_app_development
   pool: 5
-  username: starter_app
+  username: <%= ENV['db_username'] %>
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,13 +48,5 @@ test:
   encoding: unicode
   database: starter_app_test
   pool: 5
-  username: starter_app
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: starter_app_production
-  pool: 5
-  username: starter_app
+  username: <%= ENV['db_username'] %>
   password:
