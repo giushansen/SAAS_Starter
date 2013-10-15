@@ -14,3 +14,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Mac finder artifacts
+.DS_Store
+
+# vim artifacts
+**.swp
+
+# Ignore application configuration
+/config/application.yml
