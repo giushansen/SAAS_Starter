@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+// Due to fixed navbar, padding-top must be set
+body { font-family: 'Ubuntu', sans-serif; background-color: #f0f1f5; padding-top: 51px;}
+
+.left { float: left !important; }
+.right { float: right !important; }
+
+.navbar-inner { padding: 5px; box-shadow : none !important; }
+.navbar .btn { margin-top: 4px; padding: 4px 8px 5px 8px; }
+
+.navbar .brand { margin: 0 0 0 20px; padding: 8px 20px 7px 38px; }
+.navbar .brand .logo { width: 29px; height: 30px; margin-left: -38px; background: url('/assets/logo.png') no-repeat top left; position: absolute; top: 11px; z-index: 100; transition: 0s background-position; }
+.navbar .brand:hover .logo { background-position: top right; transition-delay: 0.1s; }
+.navbar .brand .txt { color: #575a5e; font-size: 22px; font-weight: 700; vertical-align: middle; transition: 0s color; }
+.navbar .brand:hover .txt { color: #3097b5; transition-delay: 0.1s; }
+.navbar .nav > li > a { color: #575a5e; font-size: 16px; font-weight: 700; text-transform: capitalize; }
+.navbar .nav > li > a:hover { color: #3097b5; }
+.navbar .btn-navbar .icon-bar { background-color: #bbbbbb; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); }
+
+.navbar .brand { margin: 0 0 0 20px; padding: 8px 20px 7px 45px; }
+.navbar .brand .logo { width: 29px; height: 30px; margin-left: -45px; background: url('/assets/logo.png') no-repeat top left; position: absolute; top: 10px; z-index: 100; transition: 0s background-position; }
+.navbar .brand:hover .logo { background-position: top right; transition-delay: 0.1s; }
+.navbar .brand .txt { color: #a4a6ab; font-size: 22px; font-weight: 700; vertical-align: middle; transition: 0s color; }
+.navbar .brand:hover .txt { color: #333333; transition-delay: 0.1s; }
+.navbar .nav > li > a { color: #a4a6ab; font-size: 16px; font-weight: 700; text-transform: capitalize; }
+.navbar .btn-navbar .icon-bar { background-color: #a4a6ab; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); }
+
+.container h2 { padding: 20px 20px 10px 20px; line-height: 26px; color: #575a5e; font-size: 26px; }
+.container .ng-scope { padding: 0 20px 20px 20px; }
+.container .ng-scope h3 { padding: 20px 0 10px 0; line-height: 24px; color: #575a5e; font-size: 24px; }
+.container .ng-scope p { line-height: 24px; color: #777777; font-size: 15px; }
+.container .ng-scope .label-warning { font-size: 14px; font-weight: 500; line-height: 22px; vertical-align: top; }
+.container .ng-scope .span4 { margin-top: -40px; padding-left: 60px; }
+.container .ng-scope .well { color: #777777; }
+.container .ng-scope .well h4 { padding-bottom: 5px; color: #575a5e; }
+.container .ng-scope .well p { line-height: 20px; color: #777777; font-size: 14px; }
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 979px) {
+body { padding: 0; }
+.navbar-fixed-top { margin: 0; }
+.navbar .brand { margin: 0 0 0 20px; }
+.nav-collapse.collapse { }
+.nav-collapse .nav { padding: 15px 0 0 0; float: none !important; }
+.nav-collapse .nav > li > a { padding-left: 75px; color: #575a5e; font-weight: 700; font-size: 16px; text-transform: capitalize; }
+.nav-collapse .nav > li > a:hover { background-color: #eeeeee }
+
+}
+
+@media (max-width: 767px) {
+.navbar-fixed-top { margin: 0; }
+.navbar .brand { margin: 0 0 0 10px; }
+
+}
+
+@media (max-width: 480px) {
+.navbar .brand { margin: 0 0 0 10px; }
+}
+@media (max-width: 239px) {
+.brand .txt { display: none; }
+}
